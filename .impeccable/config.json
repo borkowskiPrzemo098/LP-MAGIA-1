@@ -38,6 +38,15 @@
         ],
         "createdAt": "2026-08-25T10:04:39.015Z",
         "reason": "user confirmed: explicitly requested classic Helvetica + serif pairing for readability, overriding the impeccable font-variety default"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-08-25T10:10:15.048Z",
+        "reason": "already-reviewed intentional offset+blurred amber CTA glow (0 10px 24px -8px / 0 14px 30px -8px rgba amber), re-flagged after file edits shifted line numbers; not a zero-offset chromatic halo"
       }
     ]
   }
