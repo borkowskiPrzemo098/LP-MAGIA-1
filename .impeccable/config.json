@@ -11,6 +11,15 @@
         ],
         "createdAt": "2026-08-25T09:49:27.907Z",
         "reason": "false positive: offset+blurred neutral elevation shadow (0 18px 38px), not a zero-offset chromatic glow"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "rgba(217,122,46,.55)",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-08-25T09:58:24.527Z",
+        "reason": "intentional offset+blurred amber glow on primary CTA, thematically tied to molten-amber concept, not a zero-offset chromatic halo"
       }
     ]
   }
