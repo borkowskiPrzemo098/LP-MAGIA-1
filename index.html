@@ -110,10 +110,12 @@
     overflow:hidden;
   }
   .hero-grid{
-    display:grid; grid-template-columns:1.05fr .95fr; gap:56px; align-items:center;
+    display:grid; grid-template-columns:1.05fr .95fr; gap:24px; align-items:stretch;
     max-width:var(--maxw); margin:0 auto; padding:0 20px 0;
+    min-height:min(640px,86vh);
   }
-  @media(max-width:940px){ .hero-grid{ grid-template-columns:1fr; gap:40px; text-align:center; } }
+  @media(max-width:940px){ .hero-grid{ grid-template-columns:1fr; gap:40px; text-align:center; min-height:0; } }
+  .hero-copy{ display:flex; flex-direction:column; justify-content:center; padding:24px 0; }
   .hero-copy h1{
     font-size:clamp(38px,5.2vw,64px); line-height:1.04; color:#fff; margin-bottom:22px;
   }
@@ -138,17 +140,21 @@
   /* Hero coin visual */
   .amber-stage{
     position:relative; display:flex; align-items:center; justify-content:center;
-    padding:20px 0 60px;
+    height:100%; padding:32px 0;
   }
   .amber-stage::before{
-    content:""; position:absolute; width:78%; aspect-ratio:1/1; border-radius:50%;
+    content:""; position:absolute; width:86%; aspect-ratio:1/1; border-radius:50%;
     background:radial-gradient(circle, rgba(217,122,46,.35), transparent 70%);
     filter:blur(6px); z-index:0;
   }
   .hero-coin{
-    position:relative; z-index:1; width:min(420px,86vw);
+    position:relative; z-index:1; width:100%; height:100%; max-height:640px;
+    object-fit:contain;
     filter:drop-shadow(0 30px 50px rgba(0,0,0,.45));
     animation:coinFloat 7s ease-in-out infinite;
+  }
+  @media(max-width:940px){
+    .hero-coin{ max-height:420px; }
   }
   @keyframes coinFloat{
     0%,100%{ transform:translateY(0); }
