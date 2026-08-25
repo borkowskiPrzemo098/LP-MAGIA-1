@@ -167,7 +167,10 @@
     box-shadow:0 30px 60px -20px rgba(34,23,8,.22);
     max-width:1040px; margin:0 auto;
   }
-  @media(max-width:860px){ .order-grid{ grid-template-columns:1fr; } }
+  @media(max-width:860px){
+    .order-grid{ grid-template-columns:1fr; }
+    .order-info-signature{ margin-top:28px !important; }
+  }
   .order-info{
     background:linear-gradient(165deg,var(--night),#132420);
     color:var(--paper); padding:44px 40px; display:flex; flex-direction:column; justify-content:center;
@@ -197,7 +200,7 @@
     color:#fff; text-transform:uppercase;
   }
   .order-info-price{
-    margin-top:26px; padding-top:22px; border-top:1px solid rgba(255,180,84,.22); position:relative;
+    margin-top:26px; padding:22px 0 4px; border-top:1px solid rgba(255,180,84,.22); position:relative;
     text-align:center;
   }
   .order-info-price .label{
