@@ -184,15 +184,14 @@
     position:relative; margin-top:30px; border-radius:10px; overflow:hidden;
     aspect-ratio:16/10; box-shadow:0 18px 34px -12px rgba(0,0,0,.5);
   }
-  .order-info-photo img{ width:100%; height:100%; object-fit:cover; filter:saturate(1.05) brightness(.92); }
+  .order-info-photo img{ width:100%; height:100%; object-fit:cover; filter:saturate(1.05) brightness(1); }
   .order-info-photo::after{
     content:""; position:absolute; inset:0;
-    background:linear-gradient(165deg, rgba(24,43,37,.15), rgba(24,43,37,.8) 100%),
-      linear-gradient(0deg, rgba(217,122,46,.22), transparent 55%);
+    background:linear-gradient(0deg, rgba(10,18,15,.82) 0%, rgba(10,18,15,.15) 32%, transparent 55%);
   }
   .order-info-photo span{
-    position:absolute; left:14px; bottom:12px; font-size:11.5px; letter-spacing:.3px;
-    color:#e9d9bd; text-transform:uppercase;
+    position:absolute; left:14px; bottom:12px; font-size:11.5px; font-weight:700; letter-spacing:.6px;
+    color:#fff; text-transform:uppercase;
   }
   .order-info-price{
     margin-top:26px; padding-top:22px; border-top:1px solid rgba(255,180,84,.22); position:relative;
