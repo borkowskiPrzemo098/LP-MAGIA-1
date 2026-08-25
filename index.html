@@ -6,9 +6,6 @@
 <title>Bursztynowa Komnata | Magia Złota – Kolekcja Monet Kolekcjonerskich</title>
 <link rel="icon" type="image/png" href="images/logoAZ-mailing.png">
 <meta name="description" content="Złota moneta „Bursztynowa Komnata” – pierwszy egzemplarz kolekcji Magia Złota. Złoto próby 9999, certyfikat autentyczności, gwarancja 14 dni.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,500&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
     --night:#0c1613;
@@ -29,12 +26,13 @@
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{
-    font-family:'Literata',"Iowan Old Style",serif;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     color:var(--ink);
     background:var(--paper);
-    line-height:1.65;
+    line-height:1.6;
+    font-size:16.5px;
   }
-  h1,h2,h3,h4{font-family:'Gloock',serif; font-weight:400; letter-spacing:0; text-wrap:balance;}
+  h1,h2,h3,h4{font-family:Georgia,"Times New Roman",Times,serif; font-weight:700; letter-spacing:0; text-wrap:balance;}
   img{max-width:100%; display:block;}
   a{color:inherit;}
   .wrap{max-width:var(--maxw); margin:0 auto; padding:0 20px;}
@@ -42,7 +40,7 @@
     display:inline-block;
     background:linear-gradient(135deg,var(--ember),var(--resin) 60%,var(--resin-deep));
     color:#231000;
-    font-family:'Work Sans', sans-serif;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight:800;
     letter-spacing:.4px;
     text-transform:uppercase;
@@ -67,7 +65,7 @@
   /* Top bar */
   .topbar{
     background:var(--night); color:#c9ddd6;
-    font-family:'Work Sans', sans-serif; font-size:12.5px; letter-spacing:.2px;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:12.5px; letter-spacing:.2px;
     padding:9px 0; text-align:center;
     border-bottom:1px solid rgba(255,180,84,.18);
   }
@@ -78,10 +76,10 @@
     background:var(--night); padding:16px 0;
   }
   header.site .wrap{display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;}
-  .logo{font-family:'Gloock',serif; font-size:23px; letter-spacing:.5px; display:flex; align-items:center; gap:11px; color:var(--paper);}
+  .logo{font-family:Georgia,"Times New Roman",Times,serif; font-size:23px; letter-spacing:.5px; display:flex; align-items:center; gap:11px; color:var(--paper);}
   .logo img{width:32px; height:32px; border-radius:3px;}
   .logo span{color:var(--ember);}
-  .contact-line{font-family:'Work Sans', sans-serif; font-size:12.5px; text-align:right; color:#9fb3ac;}
+  .contact-line{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:12.5px; text-align:right; color:#9fb3ac;}
   .contact-line b{color:var(--paper);}
   @media(max-width:560px){
     header.site{padding:13px 0;}
@@ -124,14 +122,14 @@
     font-style:italic;
   }
   .hero-copy p.lead{
-    font-family:'Literata',serif; font-size:18.5px; color:#c4d3cc; max-width:46ch; margin-bottom:34px;
+    font-family:Georgia,"Times New Roman",Times,serif; font-size:18.5px; color:#c4d3cc; max-width:46ch; margin-bottom:34px;
   }
   @media(max-width:940px){ .hero-copy p.lead{ margin-left:auto; margin-right:auto; } }
   .hero-actions{display:flex; gap:16px; flex-wrap:wrap;}
   @media(max-width:940px){ .hero-actions{ justify-content:center; } }
   .hero-trust{
     display:flex; gap:26px; flex-wrap:wrap; margin-top:38px;
-    font-family:'Work Sans', sans-serif; font-size:12.5px; color:#8fa69d; letter-spacing:.3px;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:12.5px; color:#8fa69d; letter-spacing:.3px;
   }
   @media(max-width:940px){ .hero-trust{ justify-content:center; } }
   .hero-trust div{display:flex; align-items:center; gap:7px;}
@@ -163,10 +161,10 @@
     border:1px solid rgba(255,180,84,.35); border-radius:10px;
     padding:14px 26px; text-align:center; white-space:nowrap;
   }
-  .amber-price .old{ font-family:'Work Sans',sans-serif; font-size:12.5px; color:#8fa69d; text-decoration:line-through; }
-  .amber-price .now{ font-family:'Gloock',serif; font-size:28px; color:var(--ember); line-height:1.2; }
+  .amber-price .old{ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:12.5px; color:#8fa69d; text-decoration:line-through; }
+  .amber-price .now{ font-family:Georgia,"Times New Roman",Times,serif; font-size:28px; color:var(--ember); line-height:1.2; }
   .amber-price .save{
-    display:inline-block; font-family:'Work Sans',sans-serif; font-size:11px; font-weight:700;
+    display:inline-block; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:11px; font-weight:700;
     color:var(--petrol-light); letter-spacing:.3px; margin-top:2px;
   }
   @media (prefers-reduced-motion: reduce){
@@ -184,20 +182,46 @@
 
   /* Order section */
   .order-section{ padding-top:64px; }
-  .order-form{
-    background:#fff; border:1px solid var(--line); border-radius:14px; padding:38px; max-width:640px; margin:0 auto;
+  .order-grid{
+    display:grid; grid-template-columns:.86fr 1fr; gap:0; align-items:stretch;
+    background:#fff; border-radius:16px; overflow:hidden;
     box-shadow:0 30px 60px -20px rgba(34,23,8,.22);
+    max-width:1040px; margin:0 auto;
   }
-  .order-form h2{font-size:24px; margin-bottom:6px; text-align:center;}
-  .order-form .sub{ text-align:center; font-family:'Work Sans',sans-serif; font-size:13px; color:var(--ink-soft); margin-bottom:24px; }
+  @media(max-width:860px){ .order-grid{ grid-template-columns:1fr; } }
+  .order-info{
+    background:linear-gradient(165deg,var(--night),#0a1310);
+    color:var(--paper); padding:44px 40px; display:flex; flex-direction:column; justify-content:center;
+    position:relative; overflow:hidden;
+  }
+  .order-info::before{
+    content:""; position:absolute; inset:0;
+    background:radial-gradient(420px 320px at 10% 100%, rgba(217,122,46,.28), transparent 65%);
+    pointer-events:none;
+  }
+  .order-info h3{ font-size:26px; color:#fff; margin-bottom:14px; position:relative; }
+  .order-info p{ color:#c4d3cc; font-size:15px; margin-bottom:26px; position:relative; }
+  .order-info-list{ display:flex; flex-direction:column; gap:16px; position:relative; }
+  .order-info-list div{ display:flex; align-items:flex-start; gap:12px; font-size:14px; color:#dfe9e4; }
+  .order-info-list svg{ flex-shrink:0; margin-top:2px; }
+  .order-info-price{
+    margin-top:30px; padding-top:24px; border-top:1px solid rgba(255,180,84,.22); position:relative;
+  }
+  .order-info-price .old{ font-size:13px; color:#8fa69d; text-decoration:line-through; }
+  .order-info-price .now{ font-family:Georgia,"Times New Roman",Times,serif; font-size:34px; color:var(--ember); line-height:1.15; }
+  .order-form{
+    padding:40px 40px 38px;
+  }
+  .order-form h2{font-size:23px; margin-bottom:6px;}
+  .order-form .sub{ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:13px; color:var(--ink-soft); margin-bottom:24px; }
   .order-form .row{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;}
   @media(max-width:560px){.order-form .row{grid-template-columns:1fr;}}
   .order-form label{
-    display:block; font-family:'Work Sans', sans-serif; font-size:12.5px; font-weight:700; color:var(--ink-soft); margin-bottom:6px;
+    display:block; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:12.5px; font-weight:700; color:var(--ink-soft); margin-bottom:6px;
   }
   .order-form input, .order-form select, .order-form textarea{
     width:100%; padding:12px 14px; border:1px solid var(--line); border-radius:7px;
-    font-family:'Work Sans', sans-serif; font-size:14px; background:var(--paper); color:var(--ink);
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:14px; background:var(--paper); color:var(--ink);
   }
   .order-form input:focus, .order-form select:focus, .order-form textarea:focus{
     outline:2px solid var(--resin-light); outline-offset:1px;
@@ -205,7 +229,7 @@
   .order-form .full{grid-column:1/-1;}
   .order-summary{
     background:var(--paper-2);
-    border-radius:8px; padding:16px 18px; margin:20px 0; font-family:'Work Sans', sans-serif; font-size:13.5px;
+    border-radius:8px; padding:16px 18px; margin:20px 0; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:13.5px;
   }
   .order-summary .line{display:flex; justify-content:space-between; padding:4px 0; color:var(--ink-soft);}
   .order-summary .line .free{color:var(--green); font-weight:700;}
@@ -213,9 +237,9 @@
     display:flex; justify-content:space-between; align-items:center;
     border-top:1px solid var(--line); margin-top:8px; padding-top:10px; font-size:14px;
   }
-  .order-summary b{color:var(--resin-deep); font-size:19px; font-family:'Gloock',serif; font-weight:400;}
+  .order-summary b{color:var(--resin-deep); font-size:19px; font-family:Georgia,"Times New Roman",Times,serif; font-weight:400;}
   .order-form .btn{width:100%; text-align:center; border:none; cursor:pointer;}
-  .order-note{font-family:'Work Sans', sans-serif; font-size:12px; color:#8a7454; text-align:center; margin-top:14px;}
+  .order-note{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:12px; color:#8a7454; text-align:center; margin-top:14px;}
 
   /* Story */
   .story-grid{display:grid; grid-template-columns:.95fr 1.05fr; gap:56px; align-items:center;}
@@ -238,7 +262,7 @@
   blockquote{
     margin:22px 0; padding:4px 0 4px 22px;
     border-left:2px solid var(--resin);
-    font-family:'Gloock',serif; font-size:19px; font-style:normal; color:var(--resin-deep); line-height:1.4;
+    font-family:Georgia,"Times New Roman",Times,serif; font-size:19px; font-style:normal; color:var(--resin-deep); line-height:1.4;
   }
 
   /* Feature cards */
@@ -252,7 +276,7 @@
     width:38px;height:38px;margin-bottom:18px;
     display:flex;align-items:center;justify-content:center;color:var(--ember);
   }
-  .feature h4{font-family:'Gloock',serif; font-weight:400; font-size:18px;margin-bottom:9px; color:#fff;}
+  .feature h4{font-family:Georgia,"Times New Roman",Times,serif; font-weight:400; font-size:18px;margin-bottom:9px; color:#fff;}
   .feature p{font-size:14px;color:#a9beb6;}
 
   /* Collection strip */
@@ -275,14 +299,14 @@
   .coin-gallery figure:hover .bar-photo{ transform:scale(1.08); }
   .coin-gallery figcaption{
     position:absolute; left:0; right:0; bottom:0;
-    font-family:'Work Sans', sans-serif; font-size:12px; font-weight:700; letter-spacing:.3px;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:12px; font-weight:700; letter-spacing:.3px;
     text-align:center; padding:12px 8px 10px;
     background:linear-gradient(0deg, rgba(0,0,0,.75), transparent); color:#fff;
   }
 
   /* Specs table */
   table.specs{width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; font-variant-numeric:tabular-nums;}
-  table.specs td{padding:16px 22px; border-bottom:1px solid var(--line); font-family:'Work Sans', sans-serif; font-size:14.5px;}
+  table.specs td{padding:16px 22px; border-bottom:1px solid var(--line); font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:14.5px;}
   table.specs tr:last-child td{border-bottom:none;}
   table.specs td:first-child{color:#8a7454; width:42%;}
   table.specs td:last-child{font-weight:700;}
@@ -300,11 +324,11 @@
   .testi{background:#fff; border:1px solid var(--line); border-radius:10px; padding:26px;}
   .stars{color:var(--resin); font-size:15px; margin-bottom:12px; letter-spacing:2px;}
   .testi p{font-size:14.5px; color:var(--ink-soft); margin-bottom:16px; font-style:italic;}
-  .testi .who{font-family:'Work Sans', sans-serif; font-size:12.5px; font-weight:700; color:var(--resin-deep);}
+  .testi .who{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:12.5px; font-weight:700; color:var(--resin-deep);}
 
   /* FAQ */
   .faq-item{border-bottom:1px solid var(--line); padding:20px 0;}
-  .faq-item summary{cursor:pointer; font-family:'Gloock',serif; font-size:18px; list-style:none; position:relative; padding-right:30px;}
+  .faq-item summary{cursor:pointer; font-family:Georgia,"Times New Roman",Times,serif; font-size:18px; list-style:none; position:relative; padding-right:30px;}
   .faq-item summary::-webkit-details-marker{display:none;}
   .faq-item summary::after{content:"+"; position:absolute; right:0; top:-2px; font-size:22px; color:var(--resin); transition:transform .25s cubic-bezier(.16,1,.3,1);}
   .faq-item[open] summary::after{transform:rotate(45deg);}
@@ -321,7 +345,7 @@
   }
   .final-cta h2{color:#fff; font-size:clamp(28px,3.8vw,40px); margin-bottom:16px;}
   .final-cta p{color:#b9d0c8; max-width:520px; margin:0 auto 28px; font-size:16.5px;}
-  .micro{font-family:'Work Sans',sans-serif; font-size:11.5px; letter-spacing:.3px; color:#8fa69d; margin-top:16px;}
+  .micro{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:11.5px; letter-spacing:.3px; color:#8fa69d; margin-top:16px;}
 
   /* Sticky order bar */
   .sticky-bar{
@@ -329,7 +353,7 @@
     box-shadow:0 -10px 24px rgba(0,0,0,.25);
   }
   .sticky-bar .wrap{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:13px 20px; flex-wrap:nowrap;}
-  .sticky-bar .price{font-family:'Work Sans', sans-serif; font-weight:800; color:var(--ember); font-size:15px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .sticky-bar .price{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-weight:800; color:var(--ember); font-size:15px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
   .sticky-bar .price .full-label{color:#c4d3cc; font-weight:600;}
   @media(max-width:560px){
     .sticky-bar .wrap{padding:11px 14px; gap:10px;}
@@ -339,14 +363,14 @@
     .sticky-bar .btn-sm{padding:9px 16px; font-size:12px; flex-shrink:0;}
   }
 
-  footer{background:#08110e; color:#7c9089; padding:44px 0 26px; font-family:'Work Sans', sans-serif; font-size:13px;}
+  footer{background:#08110e; color:#7c9089; padding:44px 0 26px; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:13px;}
   footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px;}
   footer a{color:#a9beb6; text-decoration:none;}
   footer a:hover{color:var(--ember);}
   footer .legal{margin-top:26px; font-size:11.5px; color:#54655f; text-align:center; width:100%;}
 
   .badge-note{
-    background:var(--paper-2); border:1px solid var(--line); color:var(--resin-deep); font-family:'Work Sans', sans-serif;
+    background:var(--paper-2); border:1px solid var(--line); color:var(--resin-deep); font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:12.5px; padding:12px 18px; border-radius:8px; text-align:center; margin-top:24px;
   }
 
@@ -430,9 +454,24 @@
 
 <section class="order-section" id="formularz">
   <div class="wrap">
-    <form class="order-form" onsubmit="event.preventDefault(); alert('To wersja demonstracyjna szablonu — zamówienia nie są jeszcze obsługiwane.');">
-      <h2>Zamów monetę „Bursztynowa Komnata”</h2>
-      <div class="sub">Szkatuła kolekcjonerska i certyfikat autentyczności gratis</div>
+    <div class="order-grid">
+      <div class="order-info">
+        <h3>Bursztynowa Komnata</h3>
+        <p>Pierwsza moneta kolekcji „Magia Złota” — złoto próby 9999, stempel lustrzany, nakład 5 000 zestawów na świecie.</p>
+        <div class="order-info-list">
+          <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z" stroke="#ffb454" stroke-width="1.6"/></svg> Certyfikat autentyczności w komplecie</div>
+          <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="14" rx="2" stroke="#ffb454" stroke-width="1.6"/><path d="M7.5 9h9M7.5 12.5h6" stroke="#ffb454" stroke-width="1.6" stroke-linecap="round"/></svg> Szkatuła kolekcjonerska gratis</div>
+          <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 12l5-5M4 12l5 5" stroke="#ffb454" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> 14 dni na spokojną decyzję o zwrocie</div>
+          <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8h14M5 16h14" stroke="#ffb454" stroke-width="1.6" stroke-linecap="round"/></svg> Bez zobowiązań — kolekcję wstrzymasz w każdej chwili</div>
+        </div>
+        <div class="order-info-price">
+          <div class="old">499 zł</div>
+          <div class="now">429 zł</div>
+        </div>
+      </div>
+      <form class="order-form" onsubmit="event.preventDefault(); alert('To wersja demonstracyjna szablonu — zamówienia nie są jeszcze obsługiwane.');">
+      <h2>Dane do zamówienia</h2>
+      <div class="sub">Wypełnij formularz — oddzwonimy w ciągu 24h, aby potwierdzić szczegóły.</div>
       <div class="row">
         <div>
           <label for="imie">Imię i nazwisko</label>
@@ -485,7 +524,8 @@
       </div>
       <button type="submit" class="btn">Wyślij zamówienie</button>
       <div class="order-note">To formularz demonstracyjny — zamówienia nie są rejestrowane ani przekazywane do realizacji.</div>
-    </form>
+      </form>
+    </div>
   </div>
 </section>
 

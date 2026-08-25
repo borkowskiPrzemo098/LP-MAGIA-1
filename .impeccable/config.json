@@ -20,6 +20,15 @@
         ],
         "createdAt": "2026-08-25T09:58:24.527Z",
         "reason": "intentional offset+blurred amber glow on primary CTA, thematically tied to molten-amber concept, not a zero-offset chromatic halo"
+      },
+      {
+        "rule": "dark-glow",
+        "value": "rgba(217,122,46,.65)",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-08-25T10:04:03.235Z",
+        "reason": "same intentional offset+blurred amber glow on primary CTA hover state, already approved for the base state; not a zero-offset chromatic halo"
       }
     ]
   }
